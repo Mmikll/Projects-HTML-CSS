@@ -1,0 +1,86 @@
+h1{
+    color: #48e;
+    font-family: sans-serif;
+    margin: 20px;
+}
+h1:hover{ /*cuando este el mouse por encima*/
+    color: #000;
+    background: #48e;
+}
+
+h1:active{ /*cundo le damos click*/
+    background-color: #999;
+    color: #fff;
+}
+ul{
+    background: #999;
+    padding: 0;
+}
+/*seleccionar primer hijo*/
+li:first-child{
+color: red;
+}
+li{
+    color: blue;
+}
+/*seleccionar primer hijo*/
+li:last-child{
+    color: yellow;
+}
+/*seleccionando a x li*/
+li:nth-child(3n){/*poner n para saltar elemento, cada n elemento selecciona*/
+    color: green;
+    background: #fff;
+}
+li:nth-of-type(3){/*seleccionando a x li por tipo*/
+    color: blanchedalmond;
+}
+.lista-2 li:not(.elem-2){
+    color: #fff;
+}
+div{
+    border: 2px solid black;
+}
+.emp:empty{
+    background: green;
+    padding: 30px;
+    border: none;
+}
+input[type="checkbox"]{
+    margin: 50px;
+}
+input[type="checkbox"]:checked{
+    margin: 0px;
+}
+/*enlaces visitados*/
+a:link{
+    color: red;
+}
+/*enlaces no visitados*/
+a:visited{
+    color: green;
+}
+input:valid{
+    color: green;
+}
+input:invalid{
+    color: red;
+}
+/*ver focus, en mdn pseudoclases*/
+
+/*Para ahorrar la seleccion usamos*/
+/*cambia especificidad*/
+body is:(.elm1,.elem2,.elem3){
+
+}
+
+/*no cambia especificidad*/
+body where:(.elm1,.elem2,.elem3){
+
+}
+/*midifica el elemnto en el caso que tenga el elemento de adentro*/
+label:has(input:valid){
+    color:red
+}
+
+

@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.crecedor{
+    height: 100vh;
+}
+
+.box{
+    background: #48e;
+    padding: 30px;
+    animation: llenar-barra;
+    animation-fill-mode: both;
+    animation-timeline:view();
+    animation-timing-function: linear;
+    animation-range-start: contain 0%;
+    animation-range-end: contain 9 0%;
+}
+
+@keyframes llenar-barra {
+    from{
+        width: 20%;
+        opacity: 0;
+    }
+    to{
+        width: 100%;
+        color: #900;
+        opacity: 1;
+    }
+}

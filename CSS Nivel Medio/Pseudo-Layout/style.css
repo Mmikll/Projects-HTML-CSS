@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+    background:linear-gradient(#8155ad,#6d4990,#3d1f89,#322452,#000000);
+    color: #fff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+    /*Header Section*/
+
+.header{
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-image: url(webdesinepicture.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__overlay{
+    min-height: 100vh;
+    width: 100%;
+    background-color:#0006;
+    position: absolute; 
+    z-index: 1;
+}
+
+.header__container{
+    position: relative;
+    z-index: 10;
+    margin: auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+.header__img{
+    min-width: 250px;
+    max-width: 40%;
+    border: 5px solid #fff;
+    border-radius: 40%;
+    margin-bottom: 30px;
+}
+
+.header__h1{
+    margin: 0;
+    font-size: 3.6rem;
+    overflow-wrap: balance;
+}
+
+.header__p{
+    text-wrap: pretty;
+}
+
+:is(.header__h1,.header__p,.header__img):hover{
+    box-shadow: 0 0 40px #0069;
+}
+
+    /*Navbar Section*/
+
+.nav{
+    background-color: #fff;
+    display:flex ;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+}
+
+.nav__logo,.nav__container{
+    flex-grow: 1;
+}
+
+.nav__container{
+    flex-grow: 4;
+    text-align: center;
+}
+
+.nav__ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.nav__item{
+    list-style: none;
+    padding: 10px 0; 
+}
+
+.nav__link{
+    text-decoration: none;
+    color: #8155ad;
+    padding: 10px;
+    border-radius: 0;
+    transition: border 0.2s, border-radius 0.25s,outline 0.3s, outline-offset 0.25s;
+    outline: 0;
+    outline-offset:0 ;
+}
+
+.nav__img-logo{
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+.nav__link:hover{
+    border-radius: 20px;
+    background-color: #8155ad;
+    color: #fff;
+    outline: 1px solid #3d1f89;
+    outline-offset: -4px;
+}
+
+.nav--login{
+    background-color: #8155ad;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.nav--login:hover{
+    outline: none;
+    outline-offset: none;
+    background-color: #322452;
+}
+

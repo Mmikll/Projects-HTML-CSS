@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Estos son los tipos de formularios basico</h1>
+    <h2>Son 8 basico tipos de inputs </h2>
+    <p>Ademas del type que es un atributo de la etiqueta imput
+        los que hay son:
+    </p>
+    <ol>
+        <li>text</li>
+        <li>email</li>
+        <li>sumbit</li>
+        <li>password</li>
+        <li>checkbox</li>
+        <li>radio</li>
+        <li>file</li>
+        <li>date</li>
+    </ol>
+    <h2>Asi se verian</h2>
+    <!--Form tiene 4 atributos principales 
+    1) Type: se utiliza para escribir
+    2) Required: se utiliza para obligar al usuario a llenar 
+    el campo, ademas se puede usar el atributo, minlength='n'
+    para asegurar que el campo tenga un minimo de letras
+    3)Placeholder: apracera en el lugar donde se va a escribir algo
+    indicando que debe escribir el usuario
+    4)Name: sirve para identificar que datos esta reciviendo
+    tambien existe el 'value' pero es mas para javascrip
+    -->
+
+    <!--Formularios basicos-->
+    <!--Etiqueta input, se cierra solo como la etiqueta img-->
+    <form>
+       <input type="text" placeholder="Ingresa tu nombre" minlength="3">
+       <input type="email" required minlength="5" placeholder="Ingresa tu correo">
+       <input type="password" required minlength="8">
+       <input type="submit">
+       <imput type="ra">
+       <input type="checkbox" required>
+       <input type="file">
+       <input type="date">
+    </form>
+
+</body>   
+</html>

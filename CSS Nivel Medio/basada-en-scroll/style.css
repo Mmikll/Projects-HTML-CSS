@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+    box-sizing: border-box;
+}
+
+body{
+    height: 200vh;
+}
+
+.box{
+    position: static;
+    background: #fff;
+    padding: 6px;
+    border: 4px solid #48e;
+    border-radius: 39px;
+    width: 100%;
+}
+
+.barra{
+    padding: 40px;
+    background-color: #48e;
+    border-radius: 30px;
+    width: 10%;
+    animation-name: llenar-barra;
+    animation-timeline: scroll();
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+/*block=y inline=x enjes en donde se mueven el scroll*/
+.container{
+    height: 40vh;
+    scroll-timeline: --scrollbar;
+    overflow-y: auto;
+}
+
+.crecedor{
+    height: 200vh;
+}
+
+.barra-2{
+    padding: 40px;
+    background-color: #48e;
+    border-radius: 30px;
+    width: 10%;
+    animation-name: llenar-barra;
+    animation-timeline: --scrollbar ;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+/*steps(): para hacer efector de cargar en barra*/
+
+@keyframes llenar-barra {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}

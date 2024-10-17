@@ -1,0 +1,16 @@
+/* Usar goodle font */
+@font-face {
+    font-family: Montserrat;
+    src: url(/font/Montserrat/Montserrat-BlackItalic.ttf) format(truetype);
+    font-style: italic;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(/font/Montserrat/Montserrat-Bold.ttf) format(truetype);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(/font/Montserrat/Montserrat-Black.ttf) format(truetype);
+    font-weight: 400;
+}

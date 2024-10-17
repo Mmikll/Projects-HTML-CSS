@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Web-Page</title>
+</head>
+<body>
+    <header class="header">
+        <input class="header__checkbox" type="checkbox" id="open-menu">
+        <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+        <div class="header__logo-container">
+            <img class="header__logo"   src="/favicon-32x32.png" alt="Logo de Ada13">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#profile">About</a></li>
+                <li class="header__nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="header__nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <MAIN class="profile" id="profile">
+        <div class="profile__wrapper">
+            <div class="profile__img-contaier">
+                <img src="/dalto.png" alt="Dalto-Imagen" class="profile__img">
+            </div>
+        <div class="profile__data-container">
+            <div class="profile__data">
+                <div class="profile__description">
+                    <h1>Who is Miguel Miranda?</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores cum nobis eveniet minima culpa iure atque officiis quasi harum dignissimos, assumenda nam voluptatibus magni dicta. Expedita culpa ratione et nemo!</p>
+                </div>
+                <div class="profile__skills-container">
+                    <h2>SKILLS</h2>
+                    <ul>
+                        <li class="proifle__skill">
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--80">80%</div>
+                            </div>
+                            <span class="profile__skill-name">HTML</span>
+                        </li>
+                        <li class="proifle__skill">
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--60">70%</div>
+                            </div>
+                            <span class="profile__skill-name">CSS</span>
+                        </li>
+                        <li class="proifle__skill">
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--50">50%</div>
+                            </div>
+                            <span class="profile__skill-name">JS</span>
+                        </li>
+                        <li class="proifle__skill">
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--40">40%</div>
+                            </div>
+                            <span class="profile__skill-name">C++</span>
+                        </li>
+                        <li class="proifle__skill">
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--60">60%</div>
+                            </div>
+                            <span class="profile__skill-name">SQL</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </MAIN>
+    
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">PORTFOLIO SECTION</h2>
+        <di class="portfolio__proyect-container">
+            <div class="portfolio__proyect">
+                <h2 class="portfolio__proyect-name">PROYECT</h2>
+            </div>
+            <div class="portfolio__proyect">
+                <h2 class="portfolio__proyect-name">PROYECT</h2>
+            </div>
+            <div class="portfolio__proyect">
+                <h2 class="portfolio__proyect-name">PROYECT</h2>
+            </div>
+            <div class="portfolio__proyect">
+                <h2 class="portfolio__proyect-name">PROYECT</h2>
+            </div>
+            <div class="portfolio__proyect">
+                <h2 class="portfolio__proyect-name">PROYECT</h2>
+            </div>
+            <div class="portfolio__proyect">
+                <h2 class="portfolio__proyect-name">PROYECT</h2>
+            </div>
+        </di>
+    </section>
+    <section class="form" id="contact">
+        <h2 class="form__title">CONTACT</h2>
+        <form class="form__form">
+            <div class="form__input-container">
+                <label>Nombre
+                    <input type="text" placeholder="Jhon">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>Apellido
+                    <input type="text" placeholder="Doe">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>E-mail
+                    <input type="emai" placeholder="example@email.com">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>Mensaje
+                    <textarea placeholder="Write here your message"></textarea>
+                </label>
+            </div>
+            <div class="form__input-container">
+                <input type="submit">
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <strong>@mmcompany - copyright</strong> 
+    </footer>
+</body>
+</html>

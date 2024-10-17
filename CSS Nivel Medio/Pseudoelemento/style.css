@@ -1,0 +1,27 @@
+h1::first-letter{
+    color: red;
+    font-size: 3em;
+    letter-spacing: -8px;
+}
+div::first-line{
+    color: rgb(7, 7, 89);
+}
+div::selection{
+    background: yellow;
+    color: #fff;
+}
+input::placeholder{
+    color: green;
+}
+li::marker{
+    color: red;
+}
+li::before{
+    content:'Elemento';
+    color: rgb(8, 246, 28)
+}
+
+li::after{
+    content:'Elemento';
+    color: rebeccapurple;
+}

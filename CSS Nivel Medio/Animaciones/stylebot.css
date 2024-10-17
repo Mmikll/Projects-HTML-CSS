@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background: #222;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button-container:has(.btn-2){
+    filter: drop-shadow(0 0 20px #48e)
+    drop-shadow(0px 0px 4px #48e);
+}
+
+.btn{
+    padding: 10px 40px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 6px;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+/*__________WAVE BUTTON__________*/
+
+.btn-1{
+    border: 1px solid #48e;
+    overflow: hidden;
+}
+
+.btn-1::before{
+    content: "";
+    background-color: #48e;
+    display: block;
+    height: 200%;
+    width: 150%;
+    position: absolute;
+    z-index: -1;
+    transition: top .6s, left .6s;
+    border-radius: 50%;
+    top: 100%;
+    left: 30%;
+}
+
+.btn-1:hover::before{
+    top: -30%;
+    left: -30%;
+}
+
+/*__________NEON BUTTON__________*/
+
+.btn-2{
+    border: 1px solid #fff3;
+    color: #fff3;
+}
+
+.btn-2:hover{
+    animation: parpadear .6s infinite alternate backwards;
+}
+
+.btn-2::before{
+    content: "";
+    background-color: #48e;
+    display: block;
+    height: 1px;
+    width: 20%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -16px;
+    opacity: 0;
+    transition: top .6s, opacity .6s, width .2s;
+    animation: parpadear-linea 1s infinite alternate backwards;
+}
+
+.btn-2:hover::before{
+    opacity: 1;
+    top: -5px;
+    width: 80%;
+}
+
+.btn-2::after{
+    content: "";
+    background-color: #48e;
+    display: block;
+    height: 1px;
+    width: 10%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -19px;
+    opacity: 0;
+    transition: top .6s, opacity .6s, width .2s;
+    animation: parpadear-linea 1s infinite alternate-reverse backwards;
+}
+
+.btn-2:hover::after{
+    opacity: 1;
+    top: -9px;
+    width: 50%;
+}
+
+@keyframes parpadear {
+    0%{
+        color: #fff3;
+        border: 1px solir #fff3;
+        text-shadow: none;
+        box-shadow: none;
+    }
+    25%{
+        border-color: #48e;
+        color: rgb(154, 181, 255);
+        box-shadow: 0px 0px 6px #48e4,0px 0px 16px #48e5 ;
+        text-shadow:0px 0px 9px #48ee,0px 0px 3px rgb(154, 181, 255);
+    }
+
+    30%{
+        border-color: #48e;
+        color: rgb(154, 181, 255);
+        text-shadow: none;
+        box-shadow: none;
+    }   
+
+    35%{
+        border-color: #48e;
+        color: rgb(154, 181, 255);
+        box-shadow: 0px 0px 6px #48e4,0px 0px 16px #48e5 ;
+        text-shadow:0px 0px 9px #48ee,0px 0px 3px rgb(154, 181, 255);
+    }
+
+    46%{
+        text-shadow: none;
+        box-shadow: none;
+    }
+
+    60%{
+        border-color: #48e;
+        box-shadow: 0px 0px 6px #48e4,0px 0px 16px #48e5 ;
+    }
+
+    72%{
+        border-color: #48e;
+        color: rgb(154, 181, 255);
+        box-shadow: 0px 0px 6px #48e4,0px 0px 16px #48e5 ;
+        text-shadow:0px 0px 9px #48ee,0px 0px 3px rgb(154, 181, 255);
+    }
+
+    100%{
+        text-shadow: none;
+        box-shadow: none;
+    }
+}
+
+@keyframes parpadear-linea{
+    0%{
+        background-color: #48e;
+        box-shadow: 0px 0px 6px #48e4,0px 0px 16px #48e5 ;
+    }
+    25%{
+        background-color: #fff3;
+        box-shadow: none;
+    }
+
+    30%{
+        background-color: #48e;
+        box-shadow: 0px 0px 6px #48e4,0px 0px 16px #48e5 ;
+    }   
+
+    35%
+        {
+        background-color: #fff3;
+        box-shadow: none;
+    }
+
+    46%{
+        background-color: #48e;
+        box-shadow: 0px 0px 6px #48e4,0px 0px 16px #48e5 ;
+    }
+
+    60%{
+        background-color: #fff3;
+        box-shadow: none;
+    }
+
+    72%{
+        background-color: #48e;
+        box-shadow: 0px 0px 6px #48e4,0px 0px 16px #48e5 ;
+    }
+
+
+    100%{
+        background-color: #fff3;
+        box-shadow: none;
+    }
+}

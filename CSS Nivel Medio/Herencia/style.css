@@ -1,0 +1,25 @@
+body{
+    font-family: sans-serif;
+    color: blue;
+}
+div{
+    font-family: sans-serif;
+    width: 50%;
+    color: red;
+}
+h1{
+    color: inherit;
+    width: 50%;
+}
+h1{
+    color: initial;/*valor por defecto*/
+    width: 50%;
+}
+h1{
+    color: unset;/*si el valor por defecto es inherit lo vuelve inherit sino lo deja initail*/
+    width: 50%;
+}
+h1{
+    color: revert;/*hace lo mismo que unset pero mira si el usurio tiene personalizaciones primero*/
+    width: 50%;
+}

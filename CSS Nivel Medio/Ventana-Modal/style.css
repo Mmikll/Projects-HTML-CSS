@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 0.7em;
+}
+.Box{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border: 2px solid black;
+    margin: auto;
+    margin-top:30px ;
+}
+.Box__caja{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.Box--red{
+    background: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.Box--green{
+    background: green;
+    position: relative;
+    z-index: 10;
+    top: 25px;
+}
+.Box--blue{
+    background: blue;
+    position: relative;
+}

@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+    color: purple;
+}
+P{
+    font-size:14px;
+    font-family:Montserrat;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    line-height: 2;
+    text-decoration: underline overline;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}

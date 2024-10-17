@@ -1,0 +1,3 @@
+Sirve para optimizar la pagina web, solo cargar lo que el usuario ve en el momento, para no cargar la pagina de golpe y no sea lenta.
+Atributo
+loading:="lazy" dentro de la etiqueta el cual se elige

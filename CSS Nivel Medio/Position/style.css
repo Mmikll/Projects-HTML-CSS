@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    position: sticky;
+    top: 0;
+}
+.header__img{
+    margin: 0;
+    width: 100vw;
+}
+.header__nav{
+    border-radius: 10px;
+    margin: auto;
+    background: linear-gradient(90deg, hsla(5, 85%, 92%, 1) 0%, hsla(66, 70%, 80%, 1) 50%, hsla(226, 67%, 76%, 1) 100%);
+    padding: 2px;
+    width: 100vw;
+}
+.header__ul{
+    position: sticky;
+    top: 0;
+}
+.header__li{
+    display: inline-block;
+}

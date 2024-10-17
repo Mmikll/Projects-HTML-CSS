@@ -1,0 +1,24 @@
+/*seleccion por atributo*/
+img[src$="jpg"]{
+    width: 50%;
+}
+img[src^="nombre"]{
+    width: 50%;
+}
+/*seleccion donde se seleccion a un hijo dentro de un padre, descendientes*/
+ul li{
+    color: #763;
+}
+/*seleccion donde se seleccion a un hijo dentro directo*/
+li > strong{
+    color: #f00;
+}
+/*seleccion de hermano adyacencia*/
+h1+p{
+    color: #00f;
+}
+/*hermano generales, selecciona todos los p despues de h1*/
+h1
+ul + h2 + p {
+    color: #707;
+}

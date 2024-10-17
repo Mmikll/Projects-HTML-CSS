@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/*.modal{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: #333a;
+    PARA USAR CON DIV POSITION ABSOLUTE Y NO DIALOG
+}*/
+dialog{
+    height: 100vh;
+    box-sizing: border-box;
+    background: #333a;
+}
+.modal__container{
+    background: #fff;
+    padding: 10px 15px;
+    margin: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.modal__title{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.modal__buttom{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*dialog::backdrop{
+    background: #333a;
+}
+This should have worked
+*/

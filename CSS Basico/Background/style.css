@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    background:#00f4;
+    font-family: sans-serif;
+    color:#fff9;
+}
+
+.bg-1{
+    width: 100%;
+    height: 200px;
+    background: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/01073865290819.5d61d475f0072.jpg) center / cover fixed;
+}
+.bg-2{
+    width: 100%;
+    height: 200px;
+    background-color: #0005;
+}

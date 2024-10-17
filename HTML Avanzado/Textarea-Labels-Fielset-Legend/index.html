@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea & Labels</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+     <form>
+        <h2>Formulario de Contacto</h2>
+        <!--Se puede usar id="nombre" en el input y For="nombre en el label para que sea mas facil acceder al campo a rellenar"-->
+        <fieldset>   <!--Imputs Basico-->
+            <legend>Informacion Basica</legend>
+                <div class="form_inp" >
+                    <label>Nombre Completo
+                       <input required type="text" placeholder="Jhon Doyle">
+                    </label>
+                </div>
+                <div class="form_inp" >
+                    <label>Email
+                       <input required type="email" placeholder="ejemplo@gmail.com">
+                    </label>
+                </div>
+                <div class="form_inp" >
+                    <label>Ausnto
+                       <input required type="text" placeholder="Asunto del mensaje">
+                    </label>
+                </div>
+        </fieldset>
+
+        <!--Select & Options-->
+        <div class="form_inp" >
+            <label>Tipo de Usuario
+               <select name="type_of_user">
+                    <option value="user1">Seguidor</option>
+                    <option value="user2">Empresa</option>
+                    <option value="user3">Otros</option>
+               </select>
+            </label>
+        </div>
+
+        <!--Datalist & Options-->
+        <div class="form_inp" >
+            <label>Referente
+                <input list="referente">
+               <datalist id="referente" name="referente">
+                    <option value="Redes Sociales">@mmiguelemprende</option>
+                    <option value="Pagina Web">mmiguelemprende.com.py</option>
+                    <option value="Empresa">Empresa de IT</option>
+                    <option value="Otros">Amigo, Anuncio, Etc</option>
+               <datalist/>
+            </label>
+        </div>
+
+        <!--Textarea-Labels-->
+        <div class="form_inp" >
+            <label>Mensaje
+                <!--se puede usar readonly o disable si es de necesidad-->
+                <textarea required placeholder="Escriba aqui su mensaje" rows="8"></textarea>
+            </label>
+        </div>
+        <div class="form_inp" >
+            <label>Acepto los <a href="terms.html">Terminos y Condiciones</a>
+                <input type="checkbox" required class="check">
+            </label>
+        </div>
+     </form>
+</body>
+</html>
